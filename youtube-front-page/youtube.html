@@ -2,62 +2,223 @@
 <html>
     <head>
         <title>Youtube.com Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&family=Lora:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,400;1,300&family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
         <style>
-         .search-bar{
-            display: block;
-         }
-         .video-preview{
-            display: inline-block;
-         }
-         .image{
-            display: block;
-            width: 300px;
-         }
+
+        p{
+            font-family: Roboto, Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        
+    
+         
 
          .video-title{
-            display: block;
-           width: 300px;
+           margin-top: 0;
+           font-size: 14px;
+           font-weight: bold;
+           line-height: 18px;
+           margin-bottom: 12px; ;
+
          }
 
-         .video-author{
+         .video-author, .video-stats {
+          font-size: 12px;
+          color: gray;
+         }
           
+         .video-author{
+            margin-bottom: 5px;
+         }
+        
+
+        
+        .channel-icon{
+           width: 40px;
+           border-radius:40px;
+        }
+
+         .channel-picture{
+            width: 50px;
+            vertical-align: top;}
+          
+            
+         .image{
+            object-fit: cover;
+            width: 100%;
          }
 
-         .video-stats{
-         
-         }
+         .video-info{
+            width: 200px;}
+
+          .video-{
+            margin-top: 12px;
+          }
+
+          .video-info-grid{
+            display: grid;
+            grid-template-columns:50px 1fr;
+            margin-top: 12px;
+           
+          }
+
+          .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 35px;
+          }
+            
         </style>
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="search">
 
-        <div class="video-preview">
-             <img class="image" src ="./images/image1.webp">
-       
-             <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-             </p>
+        <div class="video-grid">
 
-             <p class="video-author">Marques Brownlee</p>
+            <div class="video-preview">
+        
+                 <div>
+                   <img class="image" src ="./images/image1.webp">
+                 </div>
+      
+      
+                 <div class="video-info-grid"> 
+      
+                   <div class="channel-picture">
+                      <img class="channel-icon" src="./images/image3.jpeg">
+                   </div>
+      
+                   <div class="video-info">
+                     <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                     <p class="video-author">Marques Brownlee</p>
+                     <p class="video-stats">3.4M Views 	&#183; 6 months ago</p>
+                   </div>
+      
+                  </div>
+      
+              </div>
+         
+      
+              
+            <div class="video-preview">
+                  
+                  <div>
+                     <img class="image" src ="./images/image2.webp">
+                  </div>
+         
+                  <div class="video-info-grid"> 
+                      <div class="channel-picture">
+                         <img class="channel-icon" src="./images/image4.jpeg">
+                       </div>
+         
+                      <div class="video-info">
+                          <p class="video-title">Try to not laugh Challenge #9</p>
+                          <p class="video-author">Marques Brownlee</p>
+                          <p class="video-stats">3.4M Views 	&#183; 6 months ago</p>
+                       </div>
+         
+                  </div>
+         
+             </div>
+      
 
-             <p class="video-stats">
-          3.4M Views 	&#183; 6 months ago
-            </p>
+              
+            <div class="video-preview">
+                  
+                  <div>
+                     <img class="image" src ="./images/image5.webp">
+                  </div>
+         
+                  <div class="video-info-grid"> 
+                      <div class="channel-picture">
+                         <img class="channel-icon" src="./images/image6.jpeg">
+                       </div>
+         
+                      <div class="video-info">
+                          <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+                          <p class="video-author">CS Dojo</p>
+                          <p class="video-stats">519K Views 	&#183; 5 years ago</p>
+                       </div>
+         
+                  </div>
+             </div>
+      
+            <div class="video-preview">
+                  
+                  <div>
+                     <img class="image" src ="./images/image7.webp">
+                  </div>
+         
+                  <div class="video-info-grid"> 
+                      <div class="channel-picture">
+                         <img class="channel-icon" src="./images/image8.jpeg">
+                       </div>
+         
+                      <div class="video-info">
+                          <p class="video-title">
+                            Anything You Can Fit In The Circle I’ll Pay For</p>
+                          <p class="video-author">Mr Beast/p>
+                          <p class="video-stats">141 M Views 	&#183; 1 year ago</p>
+                       </div>
+         
+                  </div>
+         
+             </div>
+      
+      
+            <div class="video-preview">
+                  
+                  <div>
+                     <img class="image" src ="./images/image9.webp">
+                  </div>
+         
+                  <div class="video-info-grid"> 
+                      <div class="channel-picture">
+                         <img class="channel-icon" src="./images/image10.jpeg">
+                       </div>
+         
+                      <div class="video-info">
+                          <p class="video-title">Why Planes Don't Fly Over Tibet/p>
+                          <p class="video-author">RealLifeLore/p>
+                          <p class="video-stats">6.6M Views 	&#183; 1 year ago</p>
+                       </div>
+         
+                  </div>
+         
+             </div>
+      
+      
+            <div class="video-preview">
+                  
+                  <div>
+                     <img class="image" src ="./images/image11.webp">
+                  </div>
+         
+                  <div class="video-info-grid"> 
+                      <div class="channel-picture">
+                         <img class="channel-icon" src="./images/image12.jpeg">
+                       </div>
+         
+                      <div class="video-info">
+                          <p class="video-title">Inside The World's Biggest Passenger Plane</p>
+                          <p class="video-author">Tech Vision</p>
+                          <p class="video-stats">3.7M Views 	&#183; 10 months ago</p>
+                       </div>
+         
+                  </div>
+         
+             </div>
+
+
         </div>
 
-        <div class="video-preview">
-            <img class="image" src ="./images/image1.webp">
       
-            <p class="video-title">
-           Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
 
-            <p class="video-author">Marques Brownlee</p>
-
-            <p class="video-stats">
-         3.4M Views 	&#183; 6 months ago
-           </p>
-       </div>
+      
 
 
 
