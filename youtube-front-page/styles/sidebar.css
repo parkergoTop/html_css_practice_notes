@@ -5,7 +5,7 @@
     top:55px;
     background-color: white;
     width: 72px;
-
+    z-index: 102;
    
 }
 
@@ -18,13 +18,23 @@
    display: flex;
    justify-content: center;
    align-items: center;
+
+   flex-direction: column;
+
+   padding-top: 5px;
+   cursor: pointer;
 }
 
 .sidebar-icon:hover{
     background-color: rgb(223, 219, 219);
+     
 }
 
 .sidebar-icon img{
     height: 24px;
 }
 
+.sidebar-icon div{
+    font-family: Roboto,Arial;
+    font-size: 10px;
+}
