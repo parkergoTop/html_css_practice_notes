@@ -1,0 +1,30 @@
+.sidebar{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    top:55px;
+    background-color: white;
+    width: 72px;
+
+   
+}
+
+.sidebar-icon{
+ 
+
+   height: 76px;
+   margin-bottom: 2px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sidebar-icon:hover{
+    background-color: rgb(223, 219, 219);
+}
+
+.sidebar-icon img{
+    height: 24px;
+}
+
